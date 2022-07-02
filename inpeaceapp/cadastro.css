@@ -1,0 +1,265 @@
+*{
+    padding: 0;
+    margin: 0%;
+}
+@font-face {
+    font-family: "HelveticaNeue";
+    src: url("./Helvetica-Neue-Font/Helvetica\ Neue.otf") format('opentype'),
+    url("./Helvetica-Neue-Font/Helvetica\ Neue\ ttf.ttf") format('truetype');
+    font-weight: bold;
+    font-weight: normal;
+}
+body{
+    background-color: #EFF0F3;
+}
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #174DBA ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#logo{
+    margin: 10px 0 10px 0;
+    width: 250px;
+    width: 200px;    
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+#box{
+    margin-top: 120px;
+    background-color: #FFFFFF;
+    text-align: center;
+    border-radius: 8px;
+    width: 700px;
+    height: 500px;
+}
+.colunm{        
+    margin:15px 0 0 20px ;
+    text-align: left;       
+    width: 40%;
+    height: 300px;
+    float: left;       
+}
+label{    
+    font:13px normal, HelveticaNeue;
+    color: #174DBA;    
+}
+.notChoose{
+    margin-left: 55px;
+}
+input{
+    margin: 15px 0 10px 55px;
+    border-radius: 10px;
+    width: 250px;
+    height: 35px;
+    border:#174DBA 1px solid;
+}
+#sexChoose{    
+    margin-left: 85px;
+    display: flex;
+    height: 65px;    
+    gap: 8px;
+    justify-content: center;
+    align-items: center;      
+}
+.choose{    
+    color: #174DBA;
+    width: auto;
+    margin:0 0 0 0;   
+}
+h2{ 
+    color: #174DBA;
+    font: 30px bold, HelveticaNeue;    
+    margin: 30px 0 30px 0;    
+}
+#button{
+    border: #174DBA;
+    font-family: HelveticaNeue;
+    background-color: #174DBA;
+    color: #FFFFFF;
+    margin: 0px 20px 0 20px;
+    width: 300px;
+}
+#button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+#aboutPassword{
+    font-size: 8.5px;
+    font-weight: lighter;
+    font-family: HelveticaNeue;
+    color: #505050;
+    margin-left:60px;
+}
+#password::placeholder{
+    color: #FFFFFF;
+}
+#acount{
+    margin: 10px;
+    font-family: HelveticaNeue;
+    text-align: center;
+    font-size: 11px;
+}
+a{
+    text-decoration: none;
+}
+
+@media (max-width: 700px){
+     #box{
+        margin-top: 5%;
+        height: auto;
+     }
+    .colunm{
+        margin-top: 10%;
+        margin-left: 25%;
+        float: none;
+     }
+    
+}
+
+@media (max-width: 600px){
+    #box{
+        margin: 2%;
+        
+    }
+    form{
+        margin-left: -20%;
+    }
+    h2{
+        margin-top:2%;
+        height: 0;
+    }
+    #aboutPassword{
+        display: none;
+    }
+    #password::placeholder{
+        color: #505050;
+
+    }
+    h2{
+        margin-top: 20%;
+    }
+    .colunm{
+        margin: 10% 0 0 33%;
+        height: 250px;
+    }
+    #colunm2{
+        margin-top: 0%;
+    }
+    
+    #button{
+        margin-left: 25%;
+    }
+    #acount{
+        margin-left: 18%;
+    }
+   
+}
+
+@media (max-width: 426px){
+    form{
+        margin-left: -37%;
+    }
+    #button{
+        margin-left: 35%;    
+    }
+    #acount{
+        margin-left: 25%;
+    }
+   
+}
+
+@media(max-width: 376px){
+   input{
+    width: 200px;
+   }
+   form{
+    margin-left: -17%;
+   }
+   #sexChoose{
+    margin-left: 90%;
+   }
+    #button{
+        width: 200px;
+        margin-left: 25%;
+    }
+    label{
+        font-size: 9.5px;
+    }
+    .colunm{
+        margin-top: 0;
+        margin-left: 22%;
+    }
+    h2{
+        margin: 30% 0 10% 0;
+    }
+    #acount{
+    margin-left: 20%;
+    }
+    #button{
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 320px){
+    input{
+        width: 200px;
+       }
+       #sexChoose{
+        margin-left: 90%;
+       }
+        #button{
+            width: 200px;
+            margin-left: 25%;
+        }
+        label{
+            
+            font-size: 9.5px;
+        }
+        form{
+            margin: 20% 0 0 -30%;
+            
+        }
+        .colunm{
+            margin-top:0%;
+        }
+        h2{
+            margin-top: 90px;
+        }
+        #button{
+            margin: 0 0 0 22%;
+        }
+        #acount{
+            margin-left: 27%;
+        }
+}
+@media(max-width:313px){
+    h2{
+        font-size: 20px;
+    }
+    input{
+        margin-top: 10px;
+    }
+    .notChoose{
+        font-size: 10px;
+    }
+    #button{
+        margin-left: 7%;
+    }
+    #logo{
+        width: 170px;
+        height: 40px;
+    }
+    #box{
+        margin-left: 0;
+    }
+    form{
+        margin-left: -40%;
+    }
+}

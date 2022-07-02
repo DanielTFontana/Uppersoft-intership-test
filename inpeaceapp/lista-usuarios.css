@@ -1,0 +1,302 @@
+*{
+    padding: 0;
+    margin: 0%;
+}
+@font-face {
+    font-family: "HelveticaNeue";
+    src: url("./Helvetica-Neue-Font/Helvetica\ Neue.otf") format('opentype'),
+    url("./Helvetica-Neue-Font/Helvetica\ Neue\ ttf.ttf") format('truetype');
+    font-weight: bold;
+    font-weight: normal;
+}
+body{
+    background-color: #EFF0F3;
+    height: 60vh;
+}
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #174DBA ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    margin-top: 7.5%;  
+}
+#logo{
+    margin: 10px 0 10px 0;
+    width: 250px;
+    width: 200px;    
+}
+h2{
+    font-family:HelveticaNeue ;
+    color: #174DBA;
+    font-size: 28px;
+    margin: 30px 0 0 275px
+}
+#users{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 1000px;
+    margin: 0 80px 20px 275px;    
+}  
+.card{
+    margin: 20px 10px 10px 10px;
+    width: 300px;
+    height: 230px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+.buttonIcon{
+    all:unset;
+    cursor: pointer;   
+   
+}
+.img{
+    display: flex;    
+    justify-content: center;
+} 
+.userPicture{
+    border-radius: 50%;
+    width: 95px;
+    height: 85px;
+    margin: 50px 50px 0 145px;  
+}
+.editIcon{ 
+    margin: 20px 60px 60px 0px;   
+    width: 30px;
+    height: 25px;
+
+}
+.textPart{
+    text-align: center;
+
+}
+.userName{
+   color: #174DBA;
+   margin-top: 10px;
+   font-family: HelvecticaNeue, sans-serif;
+   font-size: 20px;
+   font-weight: bold;
+}
+.userEmail{
+    font-family: HelveticaNeue;
+    font-size: 10px;
+    margin-top: 10px;
+    color: #505050;
+}
+footer{
+    font: 12px normal, HelveticaNeue;    
+    margin-left: 1100px;
+}
+.editIcon:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+@media(max-width: 1280px){
+    body{
+        width: 100%;
+        height: auto;
+    }
+    main{
+        width: 70%;
+        margin-left: -18%;
+    }
+    footer{
+        margin-left: 70%;
+        
+    }
+}
+
+@media(max-width: 1024px){
+    body{
+        width: 100%;
+        height: auto;
+    }
+    main{
+        margin-left: -25%;
+    }
+    footer{        
+            margin-left:40%;
+            text-align: left;           
+    }
+}
+@media(max-width: 850px){
+    body{
+        width: 100%;
+        height: auto;
+    }
+    #users{
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 800px;
+    }
+    .card{
+        
+        margin: 3%;
+    }
+    footer{
+        margin:2px 0 0 42%;
+    }
+}
+
+@media(max-width: 768px){
+    body{
+        width: 100%;
+        height: auto;
+    }
+    main{
+        margin-top: 15%;
+        margin-left: -250px;
+    
+    }
+    .card{
+        width: 280px;
+    }
+    header{
+        display: flex;
+    }
+    #logo{
+        margin-left: -35%;
+    }
+    #users{
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 700px;       
+    }
+    footer{
+        margin-left:40%;
+        text-align: left;
+        width: 200px;
+    }
+
+}
+@media(max-width:600px){
+    body{
+        width: 100%;
+        height: auto;
+    }
+    #logo{
+    margin-left: -10%;
+  }
+
+}
+
+@media (max-width: 475px){
+    body{
+        width: 100%;
+        height: auto;
+    }
+    #users{
+        margin-left: -10%;
+        display: grid;
+        grid-template-columns: auto;
+        width: auto;
+       
+    }
+    .card{
+        width: 280px;
+        margin-left: 15%;            
+    }
+    header{
+        display: flex;
+    }
+    #logo{
+        justify-content: center;
+    }
+        
+    h2{
+        font-size: 35px;
+        text-align: center;
+        margin-left: 0px;
+    }
+    footer{
+        text-align: justify;
+        margin: 3%;
+        height: 5px;
+    }
+    main{
+        margin-top: 20%;
+        margin-left: 15%;
+    }
+
+}
+
+@media (max-width: 376px){
+        body{
+            width: 100%;
+            height: auto;
+        }
+        #users{
+            margin-left: 0px;
+            display: grid;
+            grid-template-columns: auto;
+            width: auto;
+           
+        }
+        .card{
+            width: 280px;
+            margin-left: 3%;            
+        }
+        header{
+            display: flex;
+        }
+        #logo{
+            justify-content: center;
+        }
+        main{
+            margin-left: 10%;
+        }
+        h2{
+            font-size: 31px;
+            text-align: center;
+            margin: 1.8%;
+        }
+        footer{
+            text-align: justify;
+            margin: 3%;
+            height: 5px;
+        }
+    
+}
+
+@media (max-width: 320px){
+    body{
+        width: 100%;
+        height: 400px;
+    }
+    main{
+        margin-left: 15%;
+        margin-top: 25%;
+    }    
+    #users{
+        margin-left: -8%;    
+        width: auto;   
+       
+    }
+    .card{
+        width: 280px;
+        
+    }
+    h2{
+        text-align: center;
+        margin: 3%;
+    }
+    footer{
+        text-align: justify;
+        margin: 3%;
+        height: 5px;
+    } 
+    header{
+        display: flex;
+    }
+    #logo{
+        width: 220px;
+        justify-content: center;
+    }
+
+}

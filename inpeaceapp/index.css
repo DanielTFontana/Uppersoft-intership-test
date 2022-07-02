@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: "HelveticaNeue";
+    src: url("./Helvetica-Neue-Font/Helvetica\ Neue.otf") format('opentype'),
+    url("./Helvetica-Neue-Font/Helvetica\ Neue\ ttf.ttf") format('truetype');
+    font-weight: bold;
+    font-weight: normal;
+}
+body{
+    background-color: #EFF0F3;
+}
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #174DBA ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#logo{
+    margin: 10px 0 10px 0;
+    width: 250px;
+    width: 200px;    
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+div{
+    margin-top: 120px;
+    background-color: #FFFFFF;
+    text-align: center;
+    border-radius: 8px;
+}
+form{
+    margin-top: 50px;
+    text-align: left;
+    display: flex; 
+    flex-direction: column;    
+    width: 430px;
+    height: 350px;
+       
+}
+label{
+    font: 13px normal, HelveticaNeue ;
+    color: #174DBA;
+    margin-left: 70px;
+}
+input{
+    margin: 5px 70px 20px 70px;
+    border-radius: 10px;
+    height: 35px;
+    border: #174DBA 1px solid;
+}
+h2{
+    font: 30px bold, HelveticaNeue; 
+    color: #174DBA;    
+    margin: 25px 0 0 10px;
+}
+#button{
+    font-family: HelveticaNeue;
+    margin-top: 25px;
+    color: #FFFFFF;
+    background-color: #174DBA;
+}
+#button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+p{
+    font-family: HelveticaNeue;
+    text-align: center;
+    font-size: 11px;    
+}
+a{
+    text-decoration: none;
+}
+@media (max-width: 500){
+    body{
+        width: 100%;
+        height: auto;
+    }
+    div{
+        margin-top: 0%;
+    }
+}
+@media (max-width: 410px){
+    body{
+        width: 100vw;
+        height: auto;
+        
+    }
+    div{
+        margin-top: 10%;
+        margin-right: 0%;
+        width: 100vw
+    }
+    input{
+        width: 50%;
+    }
+    p{
+        margin-left: -15%;
+    }
+    h2{
+        margin-top: 10%;
+    }
+}
+@media(max-width:320px){
+    body{
+        width: 100vw;
+        height: auto;
+    }
+    h2{
+        margin-top: 15%;
+    }
+}
+@media (max-width: 280px){
+    div{
+        width: 100vw;
+    }
+    form{
+        margin-left: -15%;
+    }
+    button{
+        margin-left: -5%;
+    }
+    h2{
+        margin-left: -5%;
+    }
+}

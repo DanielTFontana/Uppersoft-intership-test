@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>             
+</head>
+<link rel="stylesheet" href="cadastro.css">
+<script src="cadastro.js"></script>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="./assets/logo-uppersoft.png" id="logo" alt="logo Uppersoft"></a>
+        </nav>
+    </header>
+    <main>
+        <div id="box">
+            <h2>Cadastro</h2> 
+
+            <form onsubmit="checking()" action="file:///C:/Users/Daniel/Desktop/inpeaceapp/index.html">
+                <div class="colunm" id="colunm1">
+
+                <label class='notChoose' for="name">Nome completo</label>
+                <input type="text" name="name" id="name" required>
+
+                <label class='notChoose' for="list">Estado</label>
+                <input list="lists" name="list" id="list" id="state" required> 
+                    <datalist id="lists">
+                        <option value="Acre (AC)">
+                        <option value="Alagoas (AL)">
+                        <option value="Amapá (AP)">
+                        <option value="Amazonas (AM)">
+                        <option value="Bahia (BA)">
+                        <option value="Ceará (CE)">
+                        <option value="Distrito Federal (DF)">
+                        <option value="Espírito Santo (ES)">
+                        <option value="Goiás (GO)">
+                        <option value="Maranhão (MA)">
+                        <option value="Mato Grosso (MT)">
+                        <option value="Mato Grosso do Sul (MS)">
+                        <option value="Minas Gerais (MG)">
+                        <option value="Pará (PA)">
+                        <option value="Paraíba (PB)">
+                        <option value="Paraná (PR)">
+                        <option value="Pernambuco (PE)">
+                        <option value="Piauí (PI)">
+                        <option value="Rio de Janeiro (RJ)">
+                        <option value="Rio Grande do Norte (RN)">
+                        <option value="Rio Grande do Sul (RS)">
+                        <option value="Rondônia (RO)">
+                        <option value="Roraima (RR)">
+                        <option value="Santa Catarina (SC)">
+                        <option value="São Paulo (SP)">
+                        <option value="Sergipe (SE)">
+                        <option value="Tocantins (TO)">
+                    </datalist>
+                
+                <label class='notChoose' for="password" >Senha</label>         
+                <input type="password" minlength="6" name="password" onchange="checking()" placeholder="Mínimo 6 caracteres" id="password" required>
+                <p id="aboutPassword">A senha deve conter no mínimo 6 caracteres</p>
+            </div>
+
+            <div class="colunm" id="colunm2">
+
+                <label class='notChoose' for="email">E-mail</label>
+                <input type="email" name="email" id="email" required>                
+                
+                 <label class='notChoose' for="sexChoose">Sexo</label>
+                        <div id="sexChoose">
+                            <input type="radio" name="sex" class="choose" id="female" value="Feminino" required>
+                            <label for="female">Feminino</label>
+                            <input type="radio" name="sex" class="choose" id="male" value="Masculino">
+                            <label for="male">Masculino</label>
+                            <input type="radio" name="sex" class="choose" id="other" value="Outro">
+                            <label for="other">Outro</label>
+                        </div>
+
+                <label class='notChoose' for="confirm">Confirmar senha</label>
+                <input type="password" minlength="6" name="confirm" onchange="checking()" id="confirm" required>                         
+            </div>            
+            
+            
+            <input type="submit" id="button" value="CADASTRAR">
+            <p id="acount">Já possui conta? <a href="index.html">Entre aqui</a></p>
+        </form>  
+        </div>
+    </main>
+</body>
+</html>
